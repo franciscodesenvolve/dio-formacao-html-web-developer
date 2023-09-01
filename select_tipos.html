@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <form onsubmit="" method="get">     <!-- é importante o onsubmit ficar no form para caso o client use teclado para enviar, ao invés do mouse -->
+        <label>Nome:   </label> <input type="text" name="name"> <br>
+        <label>Cargo:   </label> 
+            <select name="role">
+                <option value="">Selecione o cargo</option>
+                <option value="gerente">Gerente</option>
+                <option value="diretor">Diretor</option>
+                <option value="presidente">Presidente</option>
+
+            </select> <br>
+        <label>Assunto: </label> <input type="text" name="subject"> <br> <br> <br>
+
+        <button type="submit">Enviar</button> <br><br>  <!-- o botão mais comum: finaliza o formulário e envia -->
+        <button type="button" onclick="alert('Cliquei aqui!')">Clicável</button> <br> <br>  <!-- cria o botão e nada mais. Só faz se aplicar js (onclick) -->
+        <button type="reset">Limpar</button>   <!-- cria o botão e nada mais. Só faz se aplicar js (onclick) -->
+    
+    </form>
+
+
+</body>
+
+</html>
