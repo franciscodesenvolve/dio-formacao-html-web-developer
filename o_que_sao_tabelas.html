@@ -5,23 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O que são tabelas?</title>
     <style>
-        table tr:nth-child(even){
-            background-color: rgba(159, 159, 252, 0.329);
+        table {
+            -webkit-box-shadow: 8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #B1938B, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #DA635D, 5px 5px 15px 5px rgba(0,0,0,0); 
+            box-shadow: 8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #B1938B, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #DA635D, 5px 5px 15px 5px rgba(0,0,0,0);
+            background: #FFFFFF;
+                    }
+        table thead th {
+            background-color: black;
+            color: white;
         }
-        table tr:hover{
-            background-color: rgba(0, 247, 255, 0.486);
+        table tfoot td {
+            background-color: lightgray;
         }
+        table tbody tr:nth-child(even) {
+            background-color: #f1f1f1;
+        }
+        table tbody tr:hover td {
+            background-color: #fce1e1;
+            cursor:progress ;
+        }
+      
     </style>
 
 </head>
 
 <body>
     
-<table summary="Esta tabela se refere as idades da turma A da Dio" border="2" width="300" align="center">
-    <caption>-<b> Tabela de idades da minha família </b>-</caption>
+<table width="300"  align="center" cellspacing="0" cellpadding="5">
+    <caption >-<b> Tabela de idades da minha família </b>- </caption>
     <thead>
-        <tr>                                                        <!-- LINHA - Table Row-->
-            <th title="Nome Completo"><b>Nome</b></th>                                           <!---COLUNA-->
+        <tr >
+            <th colspan="3"><b>Minha tabela</b></th>                 <!-- Colspan (mescla colunas) e Rowspan mescla linhas -->                         
+        </tr>
+        <tr >                                                        <!-- LINHA - Table Row-->
+            <th title="Nome Completo"><b>Nome</b></th>               <!---COLUNA-->
             <th><b>Idade</b></th>                                               
             <th><b>Parentesco</b></th>                                               
         </tr>
@@ -41,6 +58,11 @@
             <td>Lucimar</td>
             <td>63</td>
             <td>Mãe</td>
+        </tr>
+        <tr>
+            <td>Sávio</td>
+            <td>62</td>
+            <td>Pai</td>
         </tr>
     </tbody>
     <tfoot>
