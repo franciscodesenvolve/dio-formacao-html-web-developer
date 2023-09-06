@@ -4,23 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O que são tabelas?</title>
+    <style>
+        table tr:nth-child(even){
+            background-color: rgba(159, 159, 252, 0.329);
+        }
+        table tr:hover{
+            background-color: rgba(0, 247, 255, 0.486);
+        }
+    </style>
 
 </head>
 
 <body>
     
-<table summary="Esta tabela se refere as idades da turma A da Dio" border="2" width="250" align="center" cellspacing="5" cellpadding="5">
-    <tr>                                                        <!-- LINHA - Table Row-->
-        <td>Nome</td>                                           <!---COLUNA-->
-        <td>Idade</td>                                               
+<table summary="Esta tabela se refere as idades da turma A da Dio" border="2" width="300" align="center">
+    <caption>-<b> Tabela de idades da minha família </b>-</caption>
+    <thead>
+        <tr>                                                        <!-- LINHA - Table Row-->
+            <th title="Nome Completo"><b>Nome</b></th>                                           <!---COLUNA-->
+            <th><b>Idade</b></th>                                               
+            <th><b>Parentesco</b></th>                                               
+        </tr>
+    </thead>    
+    <tbody>
+        <tr>
+            <td>Francisco</td>
+            <td>30</td>                                               
+            <td>Euzinho</td>                                               
+        </tr>
+        <tr>
+            <td>Sayron</td>
+            <td>30</td>                                               
+            <td>Irmão</td>                                               
+        </tr>
+        <tr>
+            <td>Lucimar</td>
+            <td>63</td>
+            <td>Mãe</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total</td>
+            <td>6</td>
+            <td> </td>
     </tr>
-    <tr>
-        <td>Francisco</td>
-        <td>30</td>                                               
-    </tr>
-
-
-
+    </tfoot>
 </table>
 
 </body>
